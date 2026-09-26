@@ -38,15 +38,14 @@ The overall LSVC-Geo framework consists of three major stages:
 ```text
 LSVC-Geo/
 ├── README.md
-├── CITATION.cff
 ├── requirements.txt
+├── .gitignore
+├── run.py
 ├── configs/
 │   └── default.yaml
-├── docs/
-│   └── pipeline.png
 └── example/
     ├── query_mask.png
-    └── expected_result.png
+    └── expected_result_top30.jpg
 ```
 
 The implementation modules will be added with the full source-code release.
