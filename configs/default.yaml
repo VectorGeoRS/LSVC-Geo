@@ -1,0 +1,34 @@
+method: LSVC-Geo
+
+query:
+  height: 512
+  width: 512
+
+descriptor:
+  anchor_patch_size: 160
+  context_grid_fine: 16
+  full_grid_coarse: 8
+  smooth_grid_coarse: 8
+
+retrieval:
+  query_retrieval_anchors: 60
+  anchor_topk_per_query: 80
+
+voting:
+  vote_bin_px: 16
+  angle_vote_bin_deg: 8.0
+
+verification:
+  component_match_tol_px: 42.0
+
+refinement:
+  radius_px: 10
+  stride_px: 2
+  angle_radius_deg: 4.0
+  angle_step_deg: 2.0
+
+ranking:
+  vote_weight: 0.10
+  component_weight: 0.08
+  pixel_weight: 0.77
+  area_weight: 0.05
